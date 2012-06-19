@@ -1,4 +1,4 @@
-=== Kevinjohn Gallagher: Pure Web Brilliant's URL not HTML ===
+=== Pure Web Brilliant's URL not HTML ===
 Contributors: 			kevinjohngallagher, purewebbrilliant, pure-web-brilliant 
 Donate link:			http://kevinjohngallagher.com/
 Tags: 					kevinjohn gallagher, pure web brilliant, framework, cms, simple, multisite, images, gravatar, avatar, css
@@ -7,6 +7,11 @@ Tested up to: 			3.4
 Stable tag: 			2.0
 
 
+
+Don't you hate when WordPress decides that you ALWAYS want it to format your image string for you? 
+
+
+== Description ==
 
 Don't you hate when WordPress decides that you ALWAYS want it to format your image string for you? 
 What if you want the image url so that you can use CSS in a future compatible way? 
