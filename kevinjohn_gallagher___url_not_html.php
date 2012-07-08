@@ -4,7 +4,7 @@
 	Description: 			Don't you hate when WordPress decides that you ALWAYS want it to format your image string for you? 
 							What if you want the image url so that you can use CSS in a future compatible way? 
 							Now you can.
-	Version: 				2.0
+	Version: 				2.1
 	Author: 				Kevinjohn Gallagher
 	Author URI: 			http://kevinjohngallagher.com/
 	
@@ -13,7 +13,7 @@
 	Tags: 					kevinjohn gallagher, pure web brilliant, framework, cms, simple, multisite, images, gravatar, avatar, css
 	Requires at least:		3.0
 	Tested up to: 			3.4
-	Stable tag: 			2.0
+	Stable tag: 			2.1
 */
 /**
  *
@@ -42,7 +42,7 @@
  *
  *
  *	@package				Pure Web Brilliant
- *	@version 				2.0.1
+ *	@version 				2.1
  *	@author 				Kevinjohn Gallagher <wordpress@kevinjohngallagher.com>
  *	@copyright 				Copyright (c) 2012, Kevinjohn Gallagher
  *	@link 					http://kevinjohngallagher.com
@@ -52,7 +52,17 @@
  */
 
 
-	define( '_KEVINJOHN_GALLAGHER___URL_NOT_HTML', '2.0' );
+
+ 	if ( ! defined( 'ABSPATH' ) )
+ 	{ 
+ 			die( 'Direct access not permitted.' ); 
+ 	}
+ 	
+ 	
+ 	
+
+
+	define( '_KEVINJOHN_GALLAGHER___URL_NOT_HTML', '2.1' );
 
 
 
@@ -70,8 +80,10 @@
 		
 				public	function	__construct() 
 				{
-						$this->instance =				&$this;
+						$this->instance 				=	&$this;
 						$this->uniqueID 				=	self::PM;
+						$this->plugin_dir				=	plugin_dir_path(__FILE__);	
+						$this->plugin_url				=	plugin_dir_url(__FILE__);							
 						$this->plugin_name				=	"Kevinjohn Gallagher: Pure Web Brilliant's URL not HTML image control";
 						add_action( 'init',				array( $this, 'init' ) );
 						add_action( 'init',				array( $this, 'init_child' ) );

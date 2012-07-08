@@ -4,14 +4,9 @@ Donate link:			http://kevinjohngallagher.com/
 Tags: 					kevinjohn gallagher, pure web brilliant, framework, cms, simple, multisite, images, gravatar, avatar, css
 Requires at least:		3.0
 Tested up to: 			3.4
-Stable tag: 			2.0
+Stable tag: 			2.1
 
 
-
-Don't you hate when WordPress decides that you ALWAYS want it to format your image string for you? 
-
-
-== Description ==
 
 Don't you hate when WordPress decides that you ALWAYS want it to format your image string for you? 
 What if you want the image url so that you can use CSS in a future compatible way? 
@@ -39,12 +34,18 @@ You can find that at: http://wordpress.org/extend/plugins/kevinjohn-gallagher-pu
 
 == Changelog ==
 
+= 2.1 =
+* Updated security check
+
+
 = 2.0 =
 * Removal of non-GPLv3 compatible functions.
 * Publish to WP.org repository.
 
 
 == Upgrade Notice ==
+
+
 
 = 2.0 =
 * Initial upgrade to public / GPL compatible version.
